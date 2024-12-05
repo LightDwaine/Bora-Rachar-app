@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/header_title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/purple_50"
+        android:text="@string/bora_rachar"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textColor="@color/white"/>
+
+    <!-- Campo para inserir o valor total -->
+    <EditText
+        android:id="@+id/editTextValor"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="@string/valor_total"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/header_title"
+        android:layout_margin="16dp"/>
+
+    <!-- Campo para inserir o número de pessoas -->
+    <EditText
+        android:id="@+id/editTextPessoas"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="@string/n_mero_de_pessoas"
+        android:inputType="number"
+        android:layout_below="@id/editTextValor"
+        android:layout_margin="16dp"/>
+
+    <!-- Campo para exibir o valor dividido -->
+    <TextView
+        android:id="@+id/textViewResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/valor_por_pessoa_r_0_00"
+        android:textSize="20sp"
+        android:layout_below="@id/editTextPessoas"
+        android:layout_margin="16dp"/>
+
+    <!-- Botão para compartilhar -->
+    <Button
+        android:id="@+id/buttonShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewResultado"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:text="@string/compartilhar" />
+</RelativeLayout>
