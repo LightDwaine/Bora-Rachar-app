@@ -3,4 +3,9 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="purple_50">#6750A3</color>
+    <!-- Cores primárias -->
+
+    <color name="purple_text">#5E35B1</color> <!-- Roxo médio para texto -->
+    <color name="purple_hint">#9575CD</color> <!-- Roxo mais claro para hints -->
+
 </resources>
